@@ -1,0 +1,15 @@
+{
+    "packageRules": [
+    {
+      "matchFileNames": ["deployments/**"],
+      "additionalBranchPrefix": "{{parentDir}}-"
+    },
+    {
+      "description": "foo",
+      "groupName": "foo",
+      "matchFileNames": ["deployments/**"],
+      "additionalBranchPrefix": "",
+      "addLabels": ["stage::foo"]
+    }
+  ]
+}
